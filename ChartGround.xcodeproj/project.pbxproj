@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF329C45298E305200A287C3 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF329C44298E305200A287C3 /* LineGraphView.swift */; };
 		CF329C47298E38F100A287C3 /* CGChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF329C46298E38F100A287C3 /* CGChart.swift */; };
+		CF329C4A298E3D5E00A287C3 /* PointGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF329C49298E3D5E00A287C3 /* PointGraphView.swift */; };
 		CFA90F21298E23C300B032C0 /* ChartGroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA90F20298E23C300B032C0 /* ChartGroundApp.swift */; };
 		CFA90F23298E23C300B032C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA90F22298E23C300B032C0 /* ContentView.swift */; };
 		CFA90F25298E23C300B032C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA90F24298E23C300B032C0 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		CF329C44298E305200A287C3 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
 		CF329C46298E38F100A287C3 /* CGChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGChart.swift; sourceTree = "<group>"; };
+		CF329C49298E3D5E00A287C3 /* PointGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointGraphView.swift; sourceTree = "<group>"; };
 		CFA90F1D298E23C300B032C0 /* ChartGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA90F20298E23C300B032C0 /* ChartGroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGroundApp.swift; sourceTree = "<group>"; };
 		CFA90F22298E23C300B032C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF329C48298E3C4500A287C3 /* Basic Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				CFA90F30298E271C00B032C0 /* BarGraphView.swift */,
+				CF329C44298E305200A287C3 /* LineGraphView.swift */,
+				CF329C49298E3D5E00A287C3 /* PointGraphView.swift */,
+			);
+			path = "Basic Graphs";
+			sourceTree = "<group>";
+		};
 		CFA90F14298E23C300B032C0 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +73,7 @@
 				CFA90F22298E23C300B032C0 /* ContentView.swift */,
 				CFA90F24298E23C300B032C0 /* Assets.xcassets */,
 				CFA90F26298E23C300B032C0 /* Preview Content */,
-				CFA90F30298E271C00B032C0 /* BarGraphView.swift */,
-				CF329C44298E305200A287C3 /* LineGraphView.swift */,
+				CF329C48298E3C4500A287C3 /* Basic Graphs */,
 				CF329C46298E38F100A287C3 /* CGChart.swift */,
 			);
 			path = ChartGround;
@@ -148,6 +159,7 @@
 			files = (
 				CFA90F31298E271C00B032C0 /* BarGraphView.swift in Sources */,
 				CFA90F23298E23C300B032C0 /* ContentView.swift in Sources */,
+				CF329C4A298E3D5E00A287C3 /* PointGraphView.swift in Sources */,
 				CF329C47298E38F100A287C3 /* CGChart.swift in Sources */,
 				CFA90F21298E23C300B032C0 /* ChartGroundApp.swift in Sources */,
 				CF329C45298E305200A287C3 /* LineGraphView.swift in Sources */,
