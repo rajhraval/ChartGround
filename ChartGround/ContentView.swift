@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var charts = CGChart.charts
+    
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink {
-                    BarGraphView()
-                } label: {
-                    Text("Bar Graph")
+                ForEach(charts) { chart in
+                    NavigationLink {
+                        AnyView(chart.chart)
+                    } label: {
+                        Text(chart.name)
+                    }
                 }
             }
             .navigationTitle("ChartGround")
