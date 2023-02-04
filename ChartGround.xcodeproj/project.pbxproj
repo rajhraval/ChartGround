@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF09473B298E6D4C000FAC07 /* AreaGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09473A298E6D4C000FAC07 /* AreaGraphView.swift */; };
+		CF09473D298E74EE000FAC07 /* RectGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09473C298E74EE000FAC07 /* RectGraphView.swift */; };
 		CF329C45298E305200A287C3 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF329C44298E305200A287C3 /* LineGraphView.swift */; };
 		CF329C47298E38F100A287C3 /* CGChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF329C46298E38F100A287C3 /* CGChart.swift */; };
 		CF329C4A298E3D5E00A287C3 /* PointGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF329C49298E3D5E00A287C3 /* PointGraphView.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF09473A298E6D4C000FAC07 /* AreaGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGraphView.swift; sourceTree = "<group>"; };
+		CF09473C298E74EE000FAC07 /* RectGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectGraphView.swift; sourceTree = "<group>"; };
 		CF329C44298E305200A287C3 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
 		CF329C46298E38F100A287C3 /* CGChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGChart.swift; sourceTree = "<group>"; };
 		CF329C49298E3D5E00A287C3 /* PointGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointGraphView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 				CFA90F30298E271C00B032C0 /* BarGraphView.swift */,
 				CF329C44298E305200A287C3 /* LineGraphView.swift */,
 				CF329C49298E3D5E00A287C3 /* PointGraphView.swift */,
+				CF09473A298E6D4C000FAC07 /* AreaGraphView.swift */,
+				CF09473C298E74EE000FAC07 /* RectGraphView.swift */,
 			);
 			path = "Basic Graphs";
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA90F31298E271C00B032C0 /* BarGraphView.swift in Sources */,
+				CF09473D298E74EE000FAC07 /* RectGraphView.swift in Sources */,
 				CFA90F23298E23C300B032C0 /* ContentView.swift in Sources */,
+				CF09473B298E6D4C000FAC07 /* AreaGraphView.swift in Sources */,
 				CF329C4A298E3D5E00A287C3 /* PointGraphView.swift in Sources */,
 				CF329C47298E38F100A287C3 /* CGChart.swift in Sources */,
 				CFA90F21298E23C300B032C0 /* ChartGroundApp.swift in Sources */,

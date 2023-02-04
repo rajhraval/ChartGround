@@ -17,6 +17,7 @@ extension CGChart {
     static let charts = [
         CGChart(name: "Bar Graphs", chart: BarGraphView()),
         CGChart(name: "Line Graphs", chart: LineGraphView()),
-        CGChart(name: "Point Graphs", chart: PointGraphView())
+        CGChart(name: "Point Graphs", chart: PointGraphView()),
+        CGChart(name: "Area Graphs", chart: AreaGraphView())
     ]
 }
