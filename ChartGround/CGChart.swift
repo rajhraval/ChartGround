@@ -19,6 +19,7 @@ extension CGChart {
         CGChart(name: "Line Graphs", chart: LineGraphView()),
         CGChart(name: "Point Graphs", chart: PointGraphView()),
         CGChart(name: "Area Graphs", chart: AreaGraphView()),
-        CGChart(name: "Heat Map Graphs", chart: RectGraphView())
+        CGChart(name: "Heat Map Graphs", chart: RectGraphView()),
+        CGChart(name: "Rule Mark Graphs", chart: RuleGraphView())
     ]
 }

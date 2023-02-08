@@ -17,6 +17,7 @@
 		CFA90F25298E23C300B032C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA90F24298E23C300B032C0 /* Assets.xcassets */; };
 		CFA90F28298E23C300B032C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA90F27298E23C300B032C0 /* Preview Assets.xcassets */; };
 		CFA90F31298E271C00B032C0 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA90F30298E271C00B032C0 /* BarGraphView.swift */; };
+		CFBB0F622994152200059D75 /* RuleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB0F612994152200059D75 /* RuleGraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CFA90F24298E23C300B032C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFA90F27298E23C300B032C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFA90F30298E271C00B032C0 /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
+		CFBB0F612994152200059D75 /* RuleGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 				CF329C49298E3D5E00A287C3 /* PointGraphView.swift */,
 				CF09473A298E6D4C000FAC07 /* AreaGraphView.swift */,
 				CF09473C298E74EE000FAC07 /* RectGraphView.swift */,
+				CFBB0F612994152200059D75 /* RuleGraphView.swift */,
 			);
 			path = "Basic Graphs";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				CFA90F31298E271C00B032C0 /* BarGraphView.swift in Sources */,
 				CF09473D298E74EE000FAC07 /* RectGraphView.swift in Sources */,
+				CFBB0F622994152200059D75 /* RuleGraphView.swift in Sources */,
 				CFA90F23298E23C300B032C0 /* ContentView.swift in Sources */,
 				CF09473B298E6D4C000FAC07 /* AreaGraphView.swift in Sources */,
 				CF329C4A298E3D5E00A287C3 /* PointGraphView.swift in Sources */,
