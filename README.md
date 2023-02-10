@@ -4,7 +4,7 @@
 Exploring Swift Charts
 
 ## Why I made it?
-This is an initiative to learn and explore about the Swift Charts Framework and also I wanted to do something and not sit idle.
+This is an initiative to learn and explore about the Swift Charts Framework and as I wanted to do something and not sit idle and be lazy.
 
 ### Phase 0 
 - [x] - Explore all 6 Chart types
@@ -15,7 +15,7 @@ This is an initiative to learn and explore about the Swift Charts Framework and 
 - [ ] - Coming soon.
 
 ### Want to contribute?
-Well, as of now I have no prior experience of handling an open-source project, well it might the first one (If this works our well :grimacing:), but I will create a Contributing.md soon.
+Well, as of now I have no prior experience of handling an open-source project, well it might the first one (If this works out well :grimacing:), but I will create a Contributing.md soon.
 
 If you have any suggestions or feedbacks, do reach out to me on [Twitter](https://twitter.com/rajhraval) or [LinkedIn](https://www.linkedin.com/in/rajhraval/).
 
