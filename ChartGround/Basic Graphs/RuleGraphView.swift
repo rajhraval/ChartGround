@@ -15,23 +15,30 @@ enum WorkType: String, Plottable {
     case validate = "Validate"
 }
 
+enum Phase: String, Plottable {
+    case one = "Phase 1"
+    case two = "Phase 2"
+    case three = "Phase 3"
+}
+
 struct GanttData: Identifiable {
     let id = UUID()
     let startDate: Int
     let endDate: Int
     let workType: WorkType
+    let phase: Phase
 }
 
 extension GanttData {
     static let timelines = [
-        GanttData(startDate: 1, endDate: 3, workType: .ideate),
-        GanttData(startDate: 4, endDate: 5, workType: .design),
-        GanttData(startDate: 8, endDate: 9, workType: .prototype),
-        GanttData(startDate: 10, endDate: 12, workType: .validate),
-        GanttData(startDate: 13, endDate: 15, workType: .prototype),
-        GanttData(startDate: 16, endDate: 18, workType: .prototype),
-        GanttData(startDate: 20, endDate: 22, workType: .design),
-        GanttData(startDate: 22, endDate: 27, workType: .validate),
+        GanttData(startDate: 1, endDate: 3, workType: .ideate, phase: .one),
+        GanttData(startDate: 4, endDate: 5, workType: .design, phase: .one),
+        GanttData(startDate: 8, endDate: 9, workType: .prototype, phase: .one),
+        GanttData(startDate: 10, endDate: 12, workType: .validate, phase: .one),
+        GanttData(startDate: 13, endDate: 15, workType: .prototype, phase: .two),
+        GanttData(startDate: 16, endDate: 18, workType: .prototype, phase: .three),
+        GanttData(startDate: 20, endDate: 22, workType: .design, phase: .three),
+        GanttData(startDate: 22, endDate: 27, workType: .validate, phase: .three),
     ]
 }
 
@@ -46,7 +53,8 @@ struct RuleGraphView: View {
                     ForEach(timelines) { timeline in
                         RuleMark(
                             xStart: .value("Start Date", timeline.startDate),
-                            xEnd: .value("End Date", timeline.endDate)
+                            xEnd: .value("End Date", timeline.endDate),
+                            y: .value("Phase", timeline.phase)
                         )
                         .foregroundStyle(by: .value("Work Type", timeline.workType))
                     }
