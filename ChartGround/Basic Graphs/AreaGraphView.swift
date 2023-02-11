@@ -8,43 +8,6 @@
 import SwiftUI
 import Charts
 
-enum Category: String, Plottable {
-    case finance = "Finance"
-    case pharma = "Pharmaceutical"
-    case education = "Education"
-}
-
-struct Stock: Identifiable {
-    let id = UUID()
-    let price: Int
-    let year: String
-    let category: Category
-}
-
-extension Stock {
-    static let stocks = [
-        Stock(price: 10, year: "2020", category: .finance),
-        Stock(price: 5, year: "2020", category: .pharma),
-        Stock(price: 10, year: "2020", category: .education),
-        
-        Stock(price: 5, year: "2021", category: .finance),
-        Stock(price: 20, year: "2021", category: .pharma),
-        Stock(price: 20, year: "2021", category: .education),
-        
-        Stock(price: 30, year: "2022", category: .finance),
-        Stock(price: 25, year: "2022", category: .pharma),
-        Stock(price: 20, year: "2022", category: .education),
-        
-        Stock(price: 40, year: "2023", category: .finance),
-        Stock(price: 50, year: "2023", category: .pharma),
-        Stock(price: 20, year: "2023", category: .education),
-        
-        Stock(price: 20, year: "2024", category: .finance),
-        Stock(price: 25, year: "2024", category: .pharma),
-        Stock(price: 50, year: "2024", category: .education)
-    ]
-}
-
 struct AreaGraphView: View {
     
     @State private var stocks = Stock.stocks
