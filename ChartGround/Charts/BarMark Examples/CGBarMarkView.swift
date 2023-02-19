@@ -1,5 +1,5 @@
 //
-//  BarGraphView.swift
+//  CGBarMarkView.swift
 //  ChartGround
 //
 //  Created by Raj Raval on 04/02/23.
@@ -8,12 +8,13 @@
 import SwiftUI
 import Charts
 
-struct BarGraphView: View {
+struct CGBarMarkView: View {
     
     @State private var expenses = Expenses.expenses
+    @State private var barMarks = CGChart.barMarks
     
     var body: some View {
-        GeometryReader { geo in
+        VStack {
             GroupBox {
                 Chart {
                     ForEach(expenses) { expense in
@@ -24,15 +25,23 @@ struct BarGraphView: View {
             } label: {
                 Text("BarMark in SwiftUI")
             }
-            .frame(height: geo.size.height * 0.5)
             .padding()
-            .navigationTitle("Bar Graph")
+            List {
+                ForEach(barMarks) { mark in
+                    NavigationLink {
+                        AnyView(mark.chart)
+                    } label: {
+                        Text(mark.name)
+                    }
+                }
+            }
         }
+        .navigationTitle("BarMark")
     }
 }
 
-struct BarGraphView_Previews: PreviewProvider {
+struct CGBarMarkView_Previews: PreviewProvider {
     static var previews: some View {
-        BarGraphView()
+        CGBarMarkView()
     }
 }
